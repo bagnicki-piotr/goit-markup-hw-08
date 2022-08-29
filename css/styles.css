@@ -85,17 +85,29 @@ body {
 .link:focus {
     color: var(--blue);
 }
-.button {
+.button-main {
+    font-family: "Roboto", sans-serif;
+    color: var(--white);
+    background-color: var(--blue);
+    border-style: none;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    text-align: center;
+}
+.button-portfolio {
     font-family: "Roboto", sans-serif;
     color: var(--black-soft);
+    border-style: none;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
     cursor: pointer;
     text-align: center;
 }
-.button:hover,
-.button:focus {
+.button-portfolio:hover,
+.button-portfolio:focus {
     color: var(--white);
     background-color: var(--blue);
     border-style: none;
