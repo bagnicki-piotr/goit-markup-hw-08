@@ -86,6 +86,7 @@ body {
     color: var(--blue);
 }
 .button {
+    font-family: "Roboto", sans-serif;
     color: var(--black-soft);
     font-weight: 500;
     font-size: 16px;
