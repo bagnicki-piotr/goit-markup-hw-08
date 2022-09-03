@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
+        <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
         <link rel="stylesheet" href="./css/styles.css" type="text/css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,24 +12,28 @@
         <title>Portfolio</title>
     </head>
     <body>
-        <header>
-            <a href="index.html" class="logo black"><span class="logo blue">Web</span>Studio</a>
-            <ul>
-                <li><a class="header link" href="./agencja.html" target="_self">Agencja</a></li>
-                <li><a class="header link" href="./portfolio.html" target="_self">Portfolio</a></li>
-                <li><a class="header link" href="./kontakt.html" target="_self">Kontakt</a></li>
-            </ul>
-            <a class="header grey link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="header grey link" href="tel:+48111111111">+48 111 111 111</a>
+        <header class="b-color-white header-border">
+            <div class="container header-fbox">
+                <a href="index.html" class="logo black"><span class="logo blue">Web</span>Studio</a>
+                <ul class="nav-list-fbox">
+                    <li><a class="header link" href="./agencja.html" target="_self">Agencja</a></li>
+                    <li><a class="header link" href="./portfolio.html" target="_self">Portfolio</a></li>
+                    <li><a class="header link" href="./kontakt.html" target="_self">Kontakt</a></li>
+                </ul>
+                <ul class="contact-list-fbox">
+                    <li><a class="header grey link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="header grey link" href="tel:+48111111111">+48 111 111 111</a></li>
+                </ul>
+            </div>
         </header>
         <main>
             <div>
                 <ul>
-                    <li><button class="button-portfolio" type="button">Wszystkie</button></li>
-                    <li><button class="button-portfolio" type="button">Strony</button></li>
-                    <li><button class="button-portfolio" type="button">Aplikacje</button></li>
-                    <li><button class="button-portfolio" type="button">Dizajn</button></li>
-                    <li><button class="button-portfolio" type="button">Marketing</button></li>
+                    <li><button class="button" type="button">Wszystkie</button></li>
+                    <li><button class="button" type="button">Strony</button></li>
+                    <li><button class="button" type="button">Aplikacje</button></li>
+                    <li><button class="button" type="button">Dizajn</button></li>
+                    <li><button class="button" type="button">Marketing</button></li>
                 </ul>
             </div>
             <div>

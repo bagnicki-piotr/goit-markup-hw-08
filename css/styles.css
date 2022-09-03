@@ -4,17 +4,75 @@
     --blue: #2196f3;
     --grey: #757575;
     --grey-soft: #e5e5e5;
+    --grey-team: #f5f4fa;
     --white: #ffffff;
     --white-sixty: rgba(rgba(255, 255, 255, 0.6));
+    --graphite: #2f303a;
 }
 body {
     color: var(--black-soft);
     font-family: "Roboto", "Raleway", sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
-    background-color: var(--grey-soft);
+    background-color: var(--white);
     margin: 0;
     padding: 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+img {
+    display: block;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    padding: 0;
+    margin: 0;
+}
+h3 {
+    padding: 0;
+    margin: 0;
+}
+.section-top {
+    padding: 94px 0px 0px 0px;
+}
+
+.section {
+    padding: 94px 0px 94px 0px;
+}
+.nav-list-fbox {
+    display: flex;
+    padding-left: 93px;
+    gap: 46px;
+}
+.contact-list-fbox {
+    display: flex;
+    padding-left: 371px;
+    gap: 50px;
+}
+.lorem-list-fbox {
+    display: flex;
+    justify-content: space-between;
+}
+.lorem-item {
+    width: 270px;
+}
+.spec-list-fbox {
+    display: flex;
+    justify-content: space-between;
+}
+.team-list-fbox {
+    display: flex;
+    justify-content: space-between;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
 }
 .logo {
     font-family: "Raleway", sans-serif;
@@ -28,19 +86,42 @@ body {
     font-weight: 500;
     text-decoration: none;
 }
+.header-border {
+    border-bottom: 1px solid var(--grey-border);
+}
+.header-fbox {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+.team-fbox {
+    display: flex;
+    justify-content: space-between;
+}
+.main-fbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 200px 0px;
+}
 .main-heading {
+    width: 696px;
     color: var(--white);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
+    margin: 0;
 }
 .second-heading {
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 50px;
 }
 .third-heading {
     font-weight: 700;
@@ -52,6 +133,8 @@ body {
     font-size: 16px;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .description {
     color: var(--grey);
@@ -59,6 +142,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-top: 10px;
 }
 .profession {
     color: var(--grey);
@@ -66,6 +150,12 @@ body {
     font-size: 16px;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-bottom: 30px;
+}
+.team-card {
+    background-color: var(--white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .product-name {
     font-weight: 700;
@@ -88,26 +178,22 @@ body {
 .button-main {
     font-family: "Roboto", sans-serif;
     color: var(--white);
-    background-color: var(--blue);
-    border-style: none;
     font-weight: 700;
     font-size: 16px;
+    line-height: 30px;
     letter-spacing: 0.06em;
-    cursor: pointer;
     text-align: center;
-}
-.button-portfolio {
-    font-family: "Roboto", sans-serif;
-    color: var(--black-soft);
+    width: 200px;
+    height: 50px;
+    background: var(--blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     border-style: none;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.03em;
     cursor: pointer;
-    text-align: center;
 }
-.button-portfolio:hover,
-.button-portfolio:focus {
+
+.button:hover,
+.button:focus {
     color: var(--white);
     background-color: var(--blue);
     border-style: none;
@@ -117,6 +203,7 @@ body {
 }
 .foot-normal {
     font-style: normal;
+    /* TEXT COLORS */
 }
 .black {
     color: var(--black);
@@ -135,4 +222,14 @@ body {
 }
 .white-alpha {
     color: var(--white-sixty);
+}
+/* BACKGROUND COLORS */
+.b-color-white {
+    background-color: var(--white);
+}
+.b-color-graphite {
+    background-color: var(--graphite);
+}
+.b-color-team {
+    background-color: var(--grey-team);
 }
