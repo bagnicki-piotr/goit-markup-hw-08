@@ -6,7 +6,7 @@
     --grey-soft: #e5e5e5;
     --grey-team: #f5f4fa;
     --white: #ffffff;
-    --white-sixty: rgba(rgba(255, 255, 255, 0.6));
+    --white-sixty: rgba(255, 255, 255, 0.6);
     --graphite: #2f303a;
 }
 body {
@@ -43,7 +43,11 @@ h3 {
 }
 
 .section {
-    padding: 94px 0px 94px 0px;
+    padding: 94px 0px;
+}
+.footer {
+    text-decoration: none;
+    padding: 60px 0px;
 }
 .nav-list-fbox {
     display: flex;
@@ -70,6 +74,17 @@ h3 {
     display: flex;
     justify-content: space-between;
 }
+.foot-list-fbox {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.button-list-fbox {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 50px;
+}
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -79,6 +94,10 @@ h3 {
     font-size: 26px;
     font-weight: 700;
     text-decoration: none;
+}
+.logo-f {
+    padding-bottom: 20px;
+    display: block;
 }
 .header {
     font-family: "Roboto", sans-serif;
@@ -162,14 +181,23 @@ h3 {
     font-size: 18px;
     letter-spacing: 0.06em;
     line-height: 2;
+    margin: 20px auto 4px 24px;
 }
 .product-type {
     font-size: 16px;
     letter-spacing: 0.03em;
     line-height: 1.88;
+    margin-left: 24px;
+    padding-bottom: 20px;
 }
+.tile-container {
+    width: 370px;
+    border-bottom: 1px solid #eeeeee;
+}
+
 .link {
     color: var(--black-soft);
+    text-decoration: none;
 }
 .link:hover,
 .link:focus {
@@ -191,20 +219,34 @@ h3 {
     border-style: none;
     cursor: pointer;
 }
+.button-portf {
+    font-family: "Roboto", sans-serif;
+    color: var(--black-soft);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 6px 22px;
+    background: var(--grey-team);
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+}
 
-.button:hover,
-.button:focus {
+.button-portf:hover,
+.button-portf:focus {
     color: var(--white);
     background-color: var(--blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-style: none;
-}
-.footer {
-    text-decoration: none;
 }
 .foot-normal {
     font-style: normal;
-    /* TEXT COLORS */
 }
+.foot-list {
+}
+/* TEXT COLORS */
 .black {
     color: var(--black);
 }
@@ -220,7 +262,7 @@ h3 {
 .white {
     color: var(--white);
 }
-.white-alpha {
+.white-sixty {
     color: var(--white-sixty);
 }
 /* BACKGROUND COLORS */
