@@ -48,7 +48,7 @@ h4 {
     padding: 94px 0px;
 }
 .section-top {
-    background-image: url(/images/head.jpg);
+    background-image: url(https://github.com/bagnicki-piotr/goit-markup-hw-04/blob/main/images/head.jpg?raw=true);
     background-color: rgba(47, 48, 58, 0.4);
     background-blend-mode: difference;
     background-position: center;
