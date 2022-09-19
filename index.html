@@ -16,7 +16,7 @@
             <div class="container header-fbox">
                 <a href="index.html" class="logo black"><span class="logo blue">Web</span>Studio</a>
                 <ul class="nav-list-fbox">
-                    <li><a class="header link active" href="./agencja.html" target="_self">Agencja</a></li>
+                    <li><a class="header link active" href="./index.html" target="_self">Agencja</a></li>
                     <li><a class="header link" href="./portfolio.html" target="_self">Portfolio</a></li>
                     <li><a class="header link" href="./kontakt.html" target="_self">Kontakt</a></li>
                 </ul>
@@ -41,7 +41,7 @@
         <main>
             <section class="section-top main-fbox">
                 <h1 class="main-heading">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                <button class="button-main" type="button">Zamów usługę</button>
+                <button class="button-main" type="button" data-modal-open>Zamów usługę</button>
             </section>
             <section class="section-diff container">
                 <ul class="lorem-list-fbox">
@@ -94,14 +94,17 @@
             <section class="section container">
                 <h2 class="second-heading">Czym się zajmujemy</h2>
                 <ul class="spec-list-fbox">
-                    <li>
+                    <li class="spec-img">
                         <img src="images/main1-1.jpg" alt="Tworzenie kodu" width="370" height="294" />
+                        <p class="spec-over third-heading">aplikacje komputerowe</p>
                     </li>
-                    <li>
+                    <li class="spec-img">
                         <img src="images/main1-2.jpg" alt="Aplikacje mobilne" width="370" height="294" />
+                        <p class="spec-over third-heading">aplikacje mobilne</p>
                     </li>
-                    <li>
+                    <li class="spec-img">
                         <img src="images/main1-3.jpg" alt="Design, dobór koloru" width="370" height="294" />
+                        <p class="spec-over third-heading">rozwiązania graficzne</p>
                     </li>
                 </ul>
             </section>
@@ -311,5 +314,11 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="close-btn" data-modal-close>X</button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
