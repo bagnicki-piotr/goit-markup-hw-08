@@ -1,7 +1,7 @@
 {
-    "tabWidth": 4,
-    "useTabs": false,
-    "bracketSameLine": true,
-    "editor.formatOnSave": true,
-    "printWidth": 150
+   "tabWidth": 3,
+   "useTabs": false,
+   "bracketSameLine": true,
+   "editor.formatOnSave": true,
+   "printWidth": 170
 }
