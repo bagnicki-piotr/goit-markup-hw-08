@@ -1,0 +1,38 @@
+* {
+   box-sizing: border-box;
+}
+p,
+h2,
+h3 {
+   padding: 0;
+   margin: 0;
+}
+h4 {
+   padding: 0;
+   margin: 0;
+   font-weight: 700;
+   line-height: 16px;
+}
+a {
+   color: $grey;
+   text-decoration: none;
+}
+img {
+   display: block;
+}
+ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+.section {
+   padding: 94px 0px;
+}
+.section-diff {
+   padding: 94px 0px 0px 0px;
+}
+.is-hidden {
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+}

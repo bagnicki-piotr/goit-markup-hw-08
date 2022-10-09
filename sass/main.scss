@@ -1,0 +1,25 @@
+@import "./utils/colors";
+@import "./utils/common";
+@import "./utils/fonts";
+@import "./utils/mixins";
+@import "./components/header";
+@import "./components/main-section";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/portfolio-page";
+
+// body {
+//    background-color: $primary-color;
+//    color: $primary-text;
+//    font-size: map-get($font-size, standard);
+//    letter-spacing: map-get($letter-spacing, standard);
+// }
+body {
+   color: $black-soft;
+   font-family: $font-family;
+   font-size: 14px;
+   letter-spacing: $ls-standard;
+   background-color: $white;
+   margin: 0;
+   padding: 0;
+}
