@@ -4,22 +4,24 @@
    align-items: center;
    justify-content: center;
    gap: 30px;
-   padding: 200px 0px;
+   padding: 118px 0px;
    width: 100%;
+   min-width: 320px;
    background-image: url(https://github.com/bagnicki-piotr/goit-markup-hw-04/blob/main/images/head.jpg?raw=true);
    background-color: $section-back;
    background-blend-mode: difference;
    background-position: center;
    background-repeat: no-repeat;
+   background-size: cover;
    &__heading {
-      width: 696px;
+      max-width: 365px;
       color: $white;
       font-weight: $fw-extrabold;
-      font-size: 44px;
+      font-size: 26px;
       line-height: 1.36;
       letter-spacing: $ls-header;
       text-align: center;
-      margin: 0;
+      margin: 0 auto;
    }
    &__btn {
       font-family: $font-main;
@@ -39,18 +41,24 @@
    }
 }
 .features {
-   padding: 94px 0px 0px 0px;
+   padding: 0;
 
    &__container {
-      width: 1200px;
+      width: 100%;
       margin: 0 auto;
    }
    &__items {
+      margin: 0 auto;
       display: flex;
-      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      padding: 60px 15px;
+      max-width: 450px;
    }
    &__item {
-      width: 270px;
+      width: 100%;
    }
    &__icon {
       display: flex;
@@ -59,12 +67,12 @@
       border-radius: 4px;
       margin-bottom: 30px;
       height: 120px;
-      width: 270px;
       background-color: $grey-team;
    }
    &__title {
       font-weight: $fw-bold;
       font-size: 14px;
+      text-align: center;
       letter-spacing: $ls-standard;
    }
    &__description {
@@ -74,10 +82,12 @@
       line-height: 1.71;
       letter-spacing: $ls-standard;
       margin-top: 10px;
+      text-align: center;
    }
 }
 .about {
-   padding: 94px 0px;
+   display: none;
+   padding: 60px 0px;
    &__container {
       width: 1200px;
       margin: 0 auto;
@@ -114,21 +124,11 @@
    }
 }
 .team {
-   padding: 94px 0px;
+   padding: 60px 0px;
    background-color: $grey-team;
    &__container {
-      width: 1200px;
+      width: 100%;
       margin: 0 auto;
-   }
-   &__cards {
-      display: flex;
-      justify-content: space-between;
-   }
-   &__card {
-      width: 270px;
-      background-color: $white;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 0px 0px 4px 4px;
    }
    &__heading {
       font-weight: $fw-bold;
@@ -136,6 +136,20 @@
       letter-spacing: $ls-standard;
       text-align: center;
       margin-bottom: 50px;
+   }
+   &__cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+      margin: 15px;
+   }
+   &__card {
+      max-width: 450px;
+      background-color: $white;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
    }
    &__name {
       font-weight: $fw-medium;
@@ -178,15 +192,22 @@
 }
 
 .clients {
-   padding: 94px 0px;
+   padding: 60px 0px;
+   &__container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0 auto;
+   }
    &__list {
       display: flex;
       justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
       gap: 30px;
-   }
-   &__container {
-      width: 1200px;
-      margin: 0 auto;
    }
    &__vector {
       display: flex;
@@ -195,7 +216,7 @@
       border-radius: 50%;
       margin-bottom: 30px;
       height: 92px;
-      width: 170px;
+      width: 210px;
       fill: #afb1b8;
       background-color: $white;
       border: 1px solid #afb1b8;
@@ -213,5 +234,166 @@
       fill: $blue;
       cursor: pointer;
       border: 1px solid #2196f3;
+   }
+}
+
+// ____________________________________________________________________________________________________________  7  6  8 ___________
+
+@media (min-width: 768px) {
+   .section-top {
+      &__heading {
+         max-width: 385px;
+      }
+      &__btn {
+         font-size: 16px;
+      }
+   }
+
+   .features {
+      padding: 94px 0px;
+      &__container {
+         width: 768px;
+         margin: 0 auto;
+      }
+      &__items {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         max-width: initial;
+      }
+      &__item {
+         width: 100%;
+         flex-basis: calc((100% - 120px) / 4);
+      }
+      &__icon {
+         height: 120px;
+         width: 354px;
+         background-color: $grey-team;
+      }
+      &__title {
+         font-size: 14px;
+      }
+      &__description {
+         line-height: 1.71;
+      }
+   }
+   .about {
+      padding: 94px 0px;
+      &__container {
+         width: 1200px;
+         margin: 0 auto;
+      }
+   }
+   .team {
+      padding: 94px 0px;
+
+      &__container {
+         width: 768px;
+         display: flex;
+         flex-direction: column;
+      }
+      &__cards {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         margin: 0 15px;
+      }
+      &__card {
+         width: 354px;
+      }
+   }
+   .clients {
+      padding: 94px 0px;
+      &__container {
+         width: 768px;
+      }
+      &__list {
+         display: flex;
+      }
+      &__vector {
+         width: 226px;
+      }
+      &-heading {
+         font-size: 36px;
+      }
+      &__vector:hover {
+         cursor: pointer;
+      }
+   }
+}
+// ____________________________________________________________________________________________________________  1  2  0  0 ___________
+
+@media (min-width: 1200px) {
+   .section-top {
+      padding: 200px 0px;
+      width: 100%;
+      &__heading {
+         max-width: 696px;
+         font-size: 44px;
+      }
+      &__btn {
+         cursor: pointer;
+      }
+   }
+
+   .features {
+      &__container {
+         width: 1200px;
+      }
+      &__items {
+         display: flex;
+         justify-content: space-between;
+         padding: 0;
+      }
+      &__item {
+         width: 270px;
+      }
+      &__icon {
+         width: 270px;
+      }
+      &__title {
+         font-weight: $fw-bold;
+         font-size: 14px;
+         letter-spacing: $ls-standard;
+      }
+      &__description {
+         line-height: 1.72;
+      }
+   }
+   .about {
+      display: initial;
+
+      &__container {
+         width: 1200px;
+      }
+   }
+   .team {
+      &__container {
+         width: 1200px;
+         margin: 0 auto;
+      }
+      &__cards {
+         justify-content: space-between;
+         flex-wrap: nowrap;
+         padding: 0;
+      }
+      &__card {
+         height: 428px;
+         width: 270px;
+      }
+   }
+   .clients {
+      &__container {
+         width: 1200px;
+      }
+      &__vector {
+         width: 170px;
+      }
+      &-heading {
+         margin-bottom: 50px;
+      }
+      &__vector:hover {
+         fill: $blue;
+      }
    }
 }

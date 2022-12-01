@@ -2,10 +2,13 @@
    padding: 60px 0px;
    background-color: $graphite;
    &__container {
-      width: 1200px;
+      width: 100%;
       margin: 0 auto;
       display: flex;
-      gap: 70px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
    }
    &__logo {
       font-family: $font-family;
@@ -13,6 +16,13 @@
       text-decoration: none;
       font-weight: $fw-bold;
       color: $white;
+   }
+   &__item {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
    }
    &__logo-blue {
       font-family: $font-family;
@@ -66,13 +76,15 @@
       font-weight: $fw-regular;
       font-size: 16px;
       line-height: 1.25;
-      width: 358px;
+      width: 100%;
       height: 50px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       color: $white-sixty;
       background-color: $graphite;
       border-radius: 4px;
       padding-left: 16px;
+      margin-right: 15px;
+      margin-bottom: 20px;
    }
    &-button {
       position: relative;
@@ -97,5 +109,46 @@
       top: 13px;
       right: 28px;
       fill: $white;
+   }
+}
+
+// -------------------------------------------------------------------------------------------------------------------------- 7 6 8
+
+@media (min-width: 768px) {
+   .footer {
+      padding: 0;
+      &__container {
+         width: 768px;
+         gap: 60px;
+         flex-direction: row;
+         flex-wrap: wrap;
+         padding: 60px 0;
+      }
+      &__input {
+         margin-right: 0;
+      }
+   }
+}
+
+// ------------------------------------------------------------------------------------------------------------------------ 1 2 0 0
+
+@media (min-width: 1200px) {
+   .footer {
+      background-color: $graphite;
+      &__container {
+         width: 1200px;
+         margin: 0 auto;
+         gap: 70px;
+      }
+
+      &__item {
+         text-align: left;
+         align-items: flex-start;
+      }
+
+      &__input {
+         width: 358px;
+         padding-left: 16px;
+      }
    }
 }
