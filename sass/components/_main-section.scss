@@ -40,15 +40,16 @@
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
    .section-top {
-      background-image: url(../images/mobile-head@2x.jpg);
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-head@2x.jpg);
    }
 }
 .features {
-   padding: 0;
+   padding: 60px 0;
 
    &__container {
       width: 100%;
       margin: 0 auto;
+      padding: 0 15px;
    }
    &__items {
       margin: 0 auto;
@@ -57,7 +58,7 @@
       flex-direction: column;
       justify-content: center;
       gap: 30px;
-      padding: 60px 15px;
+
       max-width: 450px;
    }
    &__item {
@@ -132,6 +133,7 @@
    &__container {
       width: 100%;
       margin: 0 auto;
+      padding: 0 15px;
    }
    &__heading {
       font-weight: $fw-bold;
@@ -146,7 +148,6 @@
       align-items: center;
       flex-direction: column;
       gap: 30px;
-      margin: 15px;
    }
    &__card {
       max-width: 450px;
@@ -203,6 +204,7 @@
       align-items: center;
       flex-direction: column;
       margin: 0 auto;
+      padding: 0 15px;
    }
    &__list {
       display: flex;
@@ -254,12 +256,11 @@
    }
    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
       .section-top {
-         background-image: url(../images/tablet-head@2x.jpg);
+         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-head@2x.jpg);
       }
    }
 
    .features {
-      padding: 94px 0px;
       &__container {
          width: 768px;
          margin: 0 auto;
@@ -290,14 +291,14 @@
    .about {
       padding: 94px 0px;
       &__container {
-         width: 1200px;
+         width: 786px;
          margin: 0 auto;
       }
    }
    .team {
-      padding: 94px 0px;
+      padding: 60px 0px;
       &__heading {
-         font-size: 36px;
+         font-size: 28px;
       }
       &__container {
          width: 768px;
@@ -308,14 +309,13 @@
          display: flex;
          flex-direction: row;
          flex-wrap: wrap;
-         margin: 0 15px;
       }
       &__card {
          width: 354px;
       }
    }
    .clients {
-      padding: 94px 0px;
+      padding: 60px 0px;
       &__container {
          width: 768px;
       }
@@ -326,7 +326,7 @@
          width: 226px;
       }
       &-heading {
-         font-size: 36px;
+         font-size: 28px;
       }
       &__vector:hover {
          cursor: pointer;
@@ -351,10 +351,11 @@
    }
    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
       .section-top {
-         background-image: url(../images/head@2x.jpg);
+         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head@2x.jpg);
       }
    }
    .features {
+      padding: 94px 0;
       &__container {
          width: 1200px;
       }
@@ -386,6 +387,10 @@
       }
    }
    .team {
+      padding: 94px 0px;
+      &__heading {
+         font-size: 36px;
+      }
       &__container {
          width: 1200px;
          margin: 0 auto;
@@ -401,6 +406,10 @@
       }
    }
    .clients {
+      padding: 94px 0px;
+      &-heading {
+         font-size: 36px;
+      }
       &__container {
          width: 1200px;
       }

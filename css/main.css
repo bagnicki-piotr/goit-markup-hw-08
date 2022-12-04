@@ -150,7 +150,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 16px 15px 16px 15px;
+  padding: 10px 15px 9px 15px;
 }
 .header__logo {
   font-family: "Raleway", sans-serif;
@@ -191,7 +191,7 @@ ul {
   }
   .header__container {
     width: 768px;
-    padding: 20px 15px;
+    padding: 16px 15px;
     flex-direction: row;
   }
   .header__mobile {
@@ -214,14 +214,16 @@ ul {
     color: #2196f3;
   }
   .header__nav-box {
+    padding-top: 8px;
     width: 40%;
   }
   .header__active::after {
     content: "";
+    position: relative;
     display: block;
     width: 100%;
     height: 4px;
-    bottom: 0;
+    bottom: 8px;
     left: 0;
     background-color: #2196f3;
     transform: translateY(35px);
@@ -284,6 +286,9 @@ ul {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: #212121;
+  }
+  .header__nav-box {
+    padding-top: 0;
   }
   .header__active {
     position: relative;
@@ -369,15 +374,16 @@ ul {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .section-top {
-    background-image: url(../images/mobile-head@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-head@2x.jpg);
   }
 }
 .features {
-  padding: 0;
+  padding: 60px 0;
 }
 .features__container {
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .features__items {
   margin: 0 auto;
@@ -386,7 +392,6 @@ ul {
   flex-direction: column;
   justify-content: center;
   gap: 30px;
-  padding: 60px 15px;
   max-width: 450px;
 }
 .features__item {
@@ -463,6 +468,7 @@ ul {
 .team__container {
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .team__heading {
   font-weight: 700;
@@ -477,7 +483,6 @@ ul {
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  margin: 15px;
 }
 .team__card {
   max-width: 450px;
@@ -534,6 +539,7 @@ ul {
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .clients__list {
   display: flex;
@@ -583,13 +589,10 @@ ul {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section-top {
-    background-image: url(../images/tablet-head@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-head@2x.jpg);
   }
 }
 @media (min-width: 768px) {
-  .features {
-    padding: 94px 0px;
-  }
   .features__container {
     width: 768px;
     margin: 0 auto;
@@ -599,6 +602,7 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: initial;
+    padding: 0;
   }
   .features__item {
     width: 100%;
@@ -621,16 +625,16 @@ ul {
     padding: 94px 0px;
   }
   .about__container {
-    width: 1200px;
+    width: 786px;
     margin: 0 auto;
   }
 }
 @media (min-width: 768px) {
   .team {
-    padding: 94px 0px;
+    padding: 60px 0px;
   }
   .team__heading {
-    font-size: 36px;
+    font-size: 28px;
   }
   .team__container {
     width: 768px;
@@ -641,7 +645,6 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 15px;
   }
   .team__card {
     width: 354px;
@@ -649,7 +652,7 @@ ul {
 }
 @media (min-width: 768px) {
   .clients {
-    padding: 94px 0px;
+    padding: 60px 0px;
   }
   .clients__container {
     width: 768px;
@@ -661,7 +664,7 @@ ul {
     width: 226px;
   }
   .clients-heading {
-    font-size: 36px;
+    font-size: 28px;
   }
   .clients__vector:hover {
     cursor: pointer;
@@ -684,10 +687,13 @@ ul {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .section-top {
-    background-image: url(../images/head@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head@2x.jpg);
   }
 }
 @media (min-width: 1200px) {
+  .features {
+    padding: 94px 0;
+  }
   .features__container {
     width: 1200px;
   }
@@ -720,6 +726,12 @@ ul {
   }
 }
 @media (min-width: 1200px) {
+  .team {
+    padding: 94px 0px;
+  }
+  .team__heading {
+    font-size: 36px;
+  }
   .team__container {
     width: 1200px;
     margin: 0 auto;
@@ -735,6 +747,12 @@ ul {
   }
 }
 @media (min-width: 1200px) {
+  .clients {
+    padding: 94px 0px;
+  }
+  .clients-heading {
+    font-size: 36px;
+  }
   .clients__container {
     width: 1200px;
   }
@@ -755,6 +773,7 @@ ul {
 .footer__container {
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -762,7 +781,7 @@ ul {
   gap: 30px;
 }
 .footer__logo {
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   text-decoration: none;
   font-weight: 700;
@@ -833,7 +852,6 @@ ul {
   background-color: #2f303a;
   border-radius: 4px;
   padding-left: 16px;
-  margin-right: 15px;
   margin-bottom: 20px;
 }
 .footer-button {
@@ -871,6 +889,7 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 60px 0;
+    justify-content: space-evenly;
   }
   .footer__input {
     margin-right: 0;
@@ -892,6 +911,14 @@ ul {
   .footer__input {
     width: 358px;
     padding-left: 16px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 615px;
   }
 }
 .backdrop {
@@ -919,12 +946,9 @@ ul {
 }
 
 .modal {
-  display: flex;
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  width: 450px;
-  min-height: 581px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -935,6 +959,8 @@ ul {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
+  padding: 40px;
+  overflow-y: auto;
 }
 .modal__close {
   display: flex;
@@ -956,14 +982,13 @@ ul {
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  margin: 40px 0 2px 0;
+  margin-bottom: 12px;
   color: #212121;
-  width: 370px;
   text-align: center;
 }
 .modal__input {
   display: block;
-  width: 370px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -972,7 +997,7 @@ ul {
 }
 .modal__comment {
   display: block;
-  width: 370px;
+  width: 100%;
   height: 120px;
   resize: none;
   padding: 12px 16px;
@@ -983,6 +1008,7 @@ ul {
 }
 .modal__button {
   display: block;
+  margin: 0 auto;
   margin-top: 20px;
   color: #fff;
   font-weight: 700;
@@ -1015,6 +1041,8 @@ ul {
 .modal__label {
   position: relative;
   color: #757575;
+  display: block;
+  margin-bottom: 10px;
 }
 .modal__label:focus-within {
   fill: #2196f3;
@@ -1038,7 +1066,7 @@ ul {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: #757575;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: 10px;
@@ -1046,16 +1074,16 @@ ul {
 }
 .modal__icon-tick {
   position: absolute;
-  top: 5px;
-  left: 12px;
+  top: 0;
+  left: 0;
   fill: #2196f3;
   opacity: 0;
 }
 .modal__tick-border {
   width: 16px;
   height: 15px;
-  top: 4px;
-  left: 11px;
+  top: 0;
+  left: 0;
   border: 2px solid #212121;
   border-radius: 2px;
   position: absolute;
@@ -1070,22 +1098,19 @@ input:checked + .modal__icon-tick {
   opacity: 1;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .modal {
-    width: 538px;
+    overflow-y: hidden;
   }
   .modal__heading {
     font-weight: 700;
     font-size: 20px;
     width: 370px;
-    line-height: 1.15;
     letter-spacing: 0.03em;
-    margin: 40px 0 2px 0;
     color: #212121;
   }
   .modal__input {
     display: block;
-    width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -1094,7 +1119,6 @@ input:checked + .modal__icon-tick {
   }
   .modal__comment {
     display: block;
-    width: 448px;
     height: 120px;
     resize: none;
     padding: 12px 16px;
@@ -1158,9 +1182,9 @@ input:checked + .modal__icon-tick {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
     color: #757575;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: 10px;
@@ -1168,20 +1192,57 @@ input:checked + .modal__icon-tick {
   }
   .modal__icon-tick {
     position: absolute;
-    top: 5px;
-    left: 12px;
+    top: 0;
+    left: 0;
     fill: #2196f3;
     opacity: 0;
   }
   .modal__tick-border {
     width: 16px;
     height: 15px;
-    top: 4px;
-    left: 11px;
+    top: 0;
+    left: 0;
     border: 2px solid #212121;
     border-radius: 2px;
     position: absolute;
     opacity: 1;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    display: flex;
+    width: 538px;
+    height: 581px;
+    padding: 0;
+  }
+  .modal__input {
+    width: 448px;
+  }
+  .modal__comment {
+    width: 448px;
+  }
+  .modal__label {
+    margin-bottom: 0;
+  }
+  .modal__label-check {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
+  .modal__heading {
+    width: 448px;
+    line-height: 1.15;
+    margin-top: 40px;
+  }
+  .modal__icon-tick {
+    top: 5px;
+    left: 12px;
+  }
+  .modal__tick-border {
+    top: 4px;
+    left: 11px;
+  }
+  .heading {
+    margin: 40px 0 2px 0;
   }
 }
 .products {
